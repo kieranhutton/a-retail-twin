@@ -1,13 +1,13 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 
-const Grid = ({ blok }) => {
+const TopBar = ({ blok }) => {
   return (
-    <div className="grid grid-cols-3" {...storyblokEditable(blok)}>
-      {blok.columns.map((nestedBlok) => (
+    <div className="TopBar" {...storyblokEditable(blok)}>
+      {blok.content.map((nestedBlok) => (
         <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
       ))}
     </div>
   );
 };
 
-export default Grid;
+export default TopBar;

@@ -18,3 +18,42 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.TopBar{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.NavLink{
+  display: flex;
+  padding: 0 15px;
+}
+
+.NavLink_img{
+  width: 22px;
+  height: 22px;
+  margin: 0 5px;
+}
+
+.NavBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavDropdownItem{
+  padding: 0 5px;
+}
+
+.NavDropdownItemName:after{
+  display: inline-flex;
+  content: "";
+  position: relative;
+  transform: rotate(-90deg);
+  height: 23px;
+  width: 26px;
+  margin-top: 0.2rem;
+  background-size: cover;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGZpbGw9J25vbmUnIHN0cm9rZT0nIzUxYjVhNicgc3Ryb2tlLXdpZHRoPSczLjUnIHZpZXdCb3g9JzAgMCAzNSAzNSc+PHBhdGggZD0nTTI1IDI5bC05LTkgOS05Jy8+PC9zdmc+);
+}

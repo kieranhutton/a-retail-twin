@@ -1,15 +1,25 @@
 import "../styles/globals.css";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 import Feature from "../components/Feature";
-import Grid from "../components/Grid";
+import NavBar from "../components/NavBar";
 import Page from "../components/Page";
 import Teaser from "../components/Teaser";
+import NavDropdownItem from "../components/NavDropdownItem";
+import DroplistItem from "../components/DroplistItem";
+import TopBar from "../components/TopBar";
+import NavLink from "../components/NavLink";
+import NavHead from "../components/NavHead";
 
 const components = {
   feature: Feature,
-  grid: Grid,
+  navBar: NavBar,
   teaser: Teaser,
   page: Page,
+  navDropdownItem: NavDropdownItem,
+  droplistItem: DroplistItem,
+  topBar: TopBar,
+  navLink: NavLink,
+  navHead : NavHead
 };
 
 storyblokInit({
