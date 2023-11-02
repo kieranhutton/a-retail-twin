@@ -7,10 +7,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "dependencies": {
     "@storyblok/react": "^2.0.0",
+    "mkcert": "^3.0.0",
     "next": "^12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
